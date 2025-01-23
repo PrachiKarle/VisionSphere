@@ -41,7 +41,7 @@ const Shape = () => {
               return (
                 <>
                   <div
-                    className="col-md-2 col-sm-6 p-2 text-center" id="id1"
+                    className="col-md-4 col-6 p-2 text-center" id="id1"
                    style={{height:"25vh"}}
                   >
                     <img src={val.img} alt="" height="70%"/>

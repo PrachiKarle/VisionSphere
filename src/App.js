@@ -7,6 +7,9 @@ import Kids from "./Kids";
 import Contact from "./Contact";
 import ScreenGlasses from "./ScreenGlasses";
 import SunGlasses from "./SunGlasses";
+import Sign from './Sign';
+import Cart from './Cart';
+import SignIn from "./SignIn";
 
 const App = () => {
   return (
@@ -23,6 +26,7 @@ const App = () => {
 
               <Route path="/contact" element={<Contact/>}/>
               <Route path="/account" element={<Sign/>}/>
+              <Route path="/signin" element={<SignIn/>}/>
               <Route path="/cart" element={<Cart/>}/>
               
           </Route>

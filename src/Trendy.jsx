@@ -4,13 +4,34 @@ import Shape from "./Shape";
 
 const Trendy = () => {
   // Featured Products
-  const products = ["images/1.webp", "images/2.webp", "images/3.webp"];
+  const products = [
+    "images/1.webp",
+    "images/2.webp",
+    "images/3.webp",
+    "images/tf4.webp",
+    "images/tf2.webp",
+    "images/tf3.webp",
+  ];
 
   // Best Sellers
-  const products1 = ["images/4.webp", "images/5.webp", "images/7.webp"];
+  const products1 = [
+    "images/4.webp",
+    "images/5.webp",
+    "images/7.webp",
+    "images/tt1.webp",
+    "images/tt2.webp",
+    "images/tt3.webp",
+  ];
 
   // New Products
-  const products2 = ["images/8.webp", "images/9.webp", "images/10.webp"];
+  const products2 = [
+    "images/8.webp",
+    "images/9.webp",
+    "images/10.webp",
+    "images/ty1.webp",
+    "images/ty2.webp",
+    "images/ty3.webp",
+  ];
 
   const [showProd1, setShow1] = useState(true);
   const [cls1, setcls1] = useState("b1");
