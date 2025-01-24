@@ -1,0 +1,34 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "username": "Prachi",
+      "useremail": "prachikarle03@gmail.com",
+      "userno": "9876543210",
+      "userpass": "visionSphere@123"
+    },
+    {
+      "username": "abc",
+      "useremail": "abc@gmail.com",
+      "userno": "9876543210",
+      "userpass": "Password@12",
+      "id": 2
+    }
+  ],
+  "Contacts": [
+    {
+      "id": 1,
+      "name": "Prachi",
+      "email": "prachikarle03@gmail.com",
+      "contact": "9876543210",
+      "message": "Hello"
+    },
+    {
+      "username": "abc",
+      "useremail": "abc@gmail.com",
+      "userno": "9876543210",
+      "usermsg": "Message",
+      "id": 2
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 
 class Contact extends React.Component {
@@ -12,21 +13,25 @@ class Contact extends React.Component {
   }
 
   render() {
-    const saveForm = (e) => {
+
+    const saveForm = async(e) => {
       e.preventDefault();
       console.log(this.state);
-      alert("Form Submitted successfully");
+      alert("Message send successfully!");
+      await axios.post('http://localhost:3000/Contacts',this.state);
       this.setState({
         username: "",
         useremail: "",
         userno: "",
         usermsg: "",
       });
-      window.location.href='/';
+      window.location.href = "/";
     };
+
+
     return (
       <>
-        <div className="row m-0 p-0">
+        <div className="row m-0 p-0" style={{ backgroundColor: "#F7F2F1" }}>
           <div className="col-md-6 col-12 p-5">
             <h1 className="" style={{ fontVariant: "small-caps" }}>
               Contact Us
@@ -41,15 +46,17 @@ class Contact extends React.Component {
           </div>
         </div>
 
-        <div className="row m-0 py-3">
-          <h5 className="text-center" style={{ fontVariant: "small-caps" }}>
-            Enquiry Form
-          </h5>
-
-          <div className="col-md-6 col-12 py-5 m-auto">
+        <div className="row m-0 py-3" style={{ backgroundColor: "#F7F2F1" }}>
+          <div
+            className="col-md-6 col-12 p-5 m-auto"
+            style={{ backgroundColor: "white", boxShadow: "0 0 5px 2px #EBEBEB" }}
+          >
+            <h5 className="text-center" style={{ fontVariant: "small-caps" }}>
+              Enquiry Form
+            </h5>
             <div className="row">
               <form action="" onSubmit={(e) => saveForm(e)}>
-                <div className="row">
+                <div className="row pt-5">
                   <div className="col-md-6 col-12 form-group my-2">
                     <label htmlFor="">Name</label>
                     <input
@@ -102,8 +109,10 @@ class Contact extends React.Component {
                     />
                   </div>
 
-                  <div className="col-12 text-center my-3">
-                    <button type="submit" className="btn btn-success">Submit</button>
+                  <div className="col-12 text-center mt-5">
+                    <button type="submit" className="btn btn-success">
+                      Submit
+                    </button>
                   </div>
                 </div>
               </form>

@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -15,16 +16,37 @@ class Sign extends React.Component {
 
   render() {
 
-    const CreateAcc = (e) => {
+    const CreateAcc = async(e) => {
       e.preventDefault();
-      console.log(this.state);
-      this.setState({
-        username: "",
-        useremail: "",
-        userno: "",
-        userpass: "",
-      });
-      window.location.href='/';
+
+      //login validation
+      var regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+      if(regex.test(this.state.userpass))
+      {
+        if(this.state.userno.length>10)
+        {
+          alert("Please, Enter 10 Digit Contact Number!");
+          window.location.href='/sign';
+        }
+        else{
+          console.log(this.state);
+          alert("Account Created successfully!")
+          await axios.post('http://localhost:3000/accounts',this.state);
+          this.setState({
+            username: "",
+            useremail: "",
+            userno: "",
+            userpass: "",
+          });
+          window.location.href='/signin';
+        }
+       
+      }
+      else{
+        alert("Please, Enter Strong Password!");
+        window.location.href='/sign';
+      }
+     
     };
 
     return (
@@ -39,9 +61,9 @@ class Sign extends React.Component {
             </h5>
             <form action="" onSubmit={(e) => CreateAcc(e)}>
               <div className="form-group my-3">
-                <label htmlFor="">Name</label>
+                <label htmlFor="">Name <sup className="text-danger">*</sup></label>
                 <input
-                  type="text"
+                  type="text" required
                   name="username"
                   className="form-control"
                   value={this.state.username}
@@ -49,9 +71,9 @@ class Sign extends React.Component {
                 />
               </div>
               <div className="form-group my-3">
-                <label htmlFor="">Email</label>
+                <label htmlFor="">Email <sup className="text-danger">*</sup></label>
                 <input
-                  type="email"
+                  type="email" required
                   name="useremail"
                   className="form-control"
                   value={this.state.useremail}
@@ -59,19 +81,19 @@ class Sign extends React.Component {
                 />
               </div>
               <div className="form-group my-3">
-                <label htmlFor="">Contact No</label>
+                <label htmlFor="">Contact No <sup className="text-danger">*</sup></label>
                 <input
                   type="text"
-                  name="userno"
+                  name="userno" required
                   className="form-control"
                   value={this.state.userno}
                   onChange={(e) => this.setState({ userno: e.target.value })}
                 />
               </div>
               <div className="form-group my-3">
-                <label htmlFor="">Password</label>
+                <label htmlFor="">Password <sup className="text-danger">*</sup></label>
                 <input
-                  type="password"
+                  type="password" required
                   name="username"
                   className="form-control"
                   value={this.state.userpass}

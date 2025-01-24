@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="row m-0 p-3">
+      <footer className="row m-0 p-3" style={{borderTop: "1px solid #E3BEB6"}}>
         <div className="col-lg-3 col-sm-6 col-12 p-3">
           {/* About */}
           <a
@@ -64,8 +64,8 @@ const Footer = () => {
         
       </footer>
       
-      <div className="row m-0 p-2 bg-light"style={{borderTop:'1px solid gray'}}>
-        <h6 className="text-secondary fw-normal text-center">© 2025 VisionSphere. All Rights Reserved.</h6>
+      <div className="row m-0 p-2"style={{borderTop:'1px solid #E3BEB6'}}>
+        <h6 className="text-dark fw-normal text-center">© 2025 VisionSphere. All Rights Reserved.</h6>
       </div>
     </>
   );

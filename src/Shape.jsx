@@ -54,9 +54,7 @@ const Shape = () => {
         </div>
       </div>
 
-      <div className="row m-0 p-0" style={{height:"80vh"}}>
-        <img src="images/last.jpg" width="100%" height="100%" alt="" />
-      </div>
+     
     </>
   );
 };

@@ -93,7 +93,7 @@ const Home = () => {
       </div>
 
       {/* services */}
-      <div className="row m-0 py-5 px-2 bg-light">
+      <div className="row m-0 py-5 px-2">
         <div
           className="col-md-3 col-sm-6 col-12 text-center"
           style={{ height: "50px" }}

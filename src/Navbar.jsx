@@ -5,12 +5,12 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg px-5 py-2">
+      <nav className="navbar navbar-expand-lg px-5 py-2" style={{borderBottom: "1px solid #E3BEB6"}}>
         <a
           href="#"
-          className="text-decoration-none display-4 text-dark fw-bold"
+          className="text-decoration-none display-4 text-dark fw-bold pb-3"
         >
-          <img src="images/logo.png" className="img-fluid" alt="" />
+          <img src="images/logo.png" className="" height="100%" alt="" />
           <span className="fw-bold px-2" style={{ fontSize: "medium" }}>
             VisionSphere
           </span>

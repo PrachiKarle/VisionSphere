@@ -74,3 +74,9 @@ b{
 #id1:hover{
    box-shadow: 0 0 4px 2px rgb(230, 230, 230);
 }
+
+
+.prod{
+  box-shadow: 0 0 5px 2px rgb(224, 223, 223) !important;
+  border-radius: 6% !important;
+}
