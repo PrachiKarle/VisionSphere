@@ -35,13 +35,13 @@ const Shape = () => {
         <h3 className="text-center" style={{ fontVariant: "small-caps" }}>
           Wear The Trend
         </h3>
-        <div className="col-12">
+        <div className="col-12 p-3">
           <div className="row m-0 p-0 py-5">
             {shape.map((val, i) => {
               return (
                 <>
                   <div
-                    className="col-md-4 col-6 p-2 text-center" id="id1"
+                    className="col-lg-4 col-md-6 col-12 p-2 text-center" id="id1"
                    style={{height:"25vh"}}
                   >
                     <img src={val.img} alt="" height="70%"/>

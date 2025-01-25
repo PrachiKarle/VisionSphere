@@ -34,7 +34,8 @@ const Home = () => {
       {/* carousel */}
 
       <div id="caroid" class="carousel slide" data-bs-ride="true">
-        <div className="carousel-inner" style={{ height: "70vh" }}>
+
+        <div className="carousel-inner h-auto" >
           <div className="carousel-item active h-100 w-100">
             <img src="images/caro3.webp" className="d-block w-100 h-100" />
           </div>
@@ -68,11 +69,11 @@ const Home = () => {
       </div>
 
       {/* products */}
-      <div className="row m-0 p-2 py-5">
+      <div className="row m-0 p-2 py-5"  style={{backgroundColor:"#F7F2F1"}}>
         {products.map((val, i) => {
           return (
             <>
-              <div className="col-md-2 col-sm-3 col-6 p-1 px-3">
+              <div className="col-lg-2 col-md-4 col-6 p-1 px-3">
                 <div
                   className="row m-0 p-2"
                   style={{
@@ -95,29 +96,25 @@ const Home = () => {
       {/* services */}
       <div className="row m-0 py-5 px-2">
         <div
-          className="col-md-3 col-sm-6 col-12 text-center"
-          style={{ height: "50px" }}
+          className="col-lg-3 col-md-6 col-sm-12 text-center py-3"
         >
           <img src="images/s1.jpg" className="m-auto" height="80%" alt="" />
           <h6 className="my-1">Fast Shipping</h6>
         </div>
         <div
-          className="col-md-3 col-sm-6 col-12 text-center"
-          style={{ height: "50px" }}
+          className="col-lg-3 col-md-6 col-sm-12 text-center py-3"
         >
           <img src="images/s2.jpeg" className="m-auto" height="80%" alt="" />
           <h6 className="my-1">24 * 7 Support</h6>
         </div>
         <div
-          className="col-md-3 col-sm-6 col-12 text-center"
-          style={{ height: "50px" }}
+          className="col-lg-3 col-md-6 col-sm-12 text-center py-3"
         >
           <img src="images/s3.jpeg" className="m-auto" height="80%" alt="" />
           <h6 className="my-1">Easy Money Back</h6>
         </div>
         <div
-          className="col-md-3 col-sm-6 col-12 text-center"
-          style={{ height: "50px" }}
+          className="col-lg-3 col-md-6 col-sm-12 text-center py-3"
         >
           <img src="images/s4.jpeg" className="m-auto" height="80%" alt="" />
           <h6 className="my-1">Secure Payment</h6>

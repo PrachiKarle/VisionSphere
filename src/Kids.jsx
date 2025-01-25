@@ -56,9 +56,9 @@ const Kids = () => {
           >
             Frame Type
           </h5>
+          <div className="row">
           <div
-            className="p-2 m-auto"
-            style={{ border: "1px solid", width: "6%" }}
+            className="p-2 col-lg-1 col-md-2 col-sm-3 col-4 m-auto" style={{border:"1px solid black"}}
           >
             <img src="images/Fullrim.webp" className="img-fluid" alt="" />
             <br />
@@ -66,7 +66,7 @@ const Kids = () => {
               Full Rim
             </b>
           </div>
-
+          </div>
           <h5
             className="fw-normal mt-4"
             style={{ fontVariant: "small-caps", fontSize: "larger" }}
@@ -74,7 +74,7 @@ const Kids = () => {
             Age Group
           </h5>
           <div className="row">
-            <div className="col-md-2 col-4 my-4 d-flex justify-content-between m-auto">
+            <div className="col-lg-3 col-md-4 col-sm-5 col-7 my-4 d-flex justify-content-between m-auto">
               <div
                 onClick={() => Change1()}
                 className="p-2"

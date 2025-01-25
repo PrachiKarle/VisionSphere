@@ -13,12 +13,12 @@ class Contact extends React.Component {
   }
 
   render() {
-
-    const saveForm = async(e) => {
+    const saveForm = async (e) => {
       e.preventDefault();
       console.log(this.state);
       alert("Message send successfully!");
-      await axios.post('http://localhost:3000/Contacts',this.state);
+
+      await axios.post("http://localhost:3000/Contacts", this.state);
       this.setState({
         username: "",
         useremail: "",
@@ -28,28 +28,35 @@ class Contact extends React.Component {
       window.location.href = "/";
     };
 
-
     return (
       <>
         <div className="row m-0 p-0" style={{ backgroundColor: "#F7F2F1" }}>
-          <div className="col-md-6 col-12 p-5">
-            <h1 className="" style={{ fontVariant: "small-caps" }}>
-              Contact Us
-            </h1>
-            <h6 className="fw-normal">
-              Feel free to reach out to our friendly team. We’re here to help!
-            </h6>
+          <div className="col-lg-9 col-md-8 col-12 p-5">
+            <div className="row">
+              <div className="col-lg-8 col-12">
+                <h1 className="" style={{ fontVariant: "small-caps" }}>
+                  Contact Us
+                </h1>
+                <h6 className="fw-normal">
+                  Feel free to reach out to our friendly team. We’re here to
+                  help!
+                </h6>
+              </div>
+            </div>
           </div>
-          <div className="col-md-3"></div>
-          <div className="col-md-2 col-12 p-2" style={{ height: "30vh" }}>
+
+          <div className="col-lg-3 col-md-4 col-12 p-5" style={{height:"55vh"}}>
             <img src="images/contact.webp" height="100%" width="100%" alt="" />
           </div>
         </div>
 
-        <div className="row m-0 py-3" style={{ backgroundColor: "#F7F2F1" }}>
+        <div className="row m-0 py-5" style={{ backgroundColor: "#F7F2F1" }}>
           <div
-            className="col-md-6 col-12 p-5 m-auto"
-            style={{ backgroundColor: "white", boxShadow: "0 0 5px 2px #EBEBEB" }}
+            className="col-lg-6 col-md-8 col-12 p-5 m-auto"
+            style={{
+              backgroundColor: "white",
+              boxShadow: "0 0 5px 2px #EBEBEB",
+            }}
           >
             <h5 className="text-center" style={{ fontVariant: "small-caps" }}>
               Enquiry Form

@@ -82,34 +82,33 @@ const Trendy = () => {
             Trending Products
           </h2>
 
-          <h6
-            className="mt-
-          "
+          <div
+            className="my-3"
           >
-            <b
+            <p
               className="fw-normal fs-medium mx-3"
               id={cls1}
               onClick={() => change1()}
             >
               Featured Products
-            </b>{" "}
-            <b
+            </p>
+            <p
               className="fw-normal fs-medium mx-3"
               id={cls2}
               onClick={() => change2()}
             >
-              {" "}
-              Best Sellers{" "}
-            </b>
-            <b
+              
+              Best Sellers
+            </p>
+            <p
               className="fw-normal fs-medium mx-3"
               id={cls3}
               onClick={() => change3()}
             >
-              {" "}
-              New Products{" "}
-            </b>
-          </h6>
+              
+              New Products
+            </p>
+          </div>
         </div>
 
         <div className="col-12">
@@ -120,11 +119,11 @@ const Trendy = () => {
                 {products.map((val, i) => {
                   return (
                     <>
-                      <div className="col-md-4 col-sm-6 col-12 p-5">
+                      <div className="col-lg-4 col-sm-6 col-12 p-4">
                         <img
                           src={val}
                           className=""
-                          height="80vh"
+                          height="90vh"
                           width="90%"
                           alt=""
                         />
@@ -141,11 +140,11 @@ const Trendy = () => {
                 {products1.map((val, i) => {
                   return (
                     <>
-                      <div className="col-md-4 col-sm-6 col-12 p-5">
+                      <div className="col-lg-4 col-sm-6 col-12 p-4">
                         <img
                           src={val}
                           className=""
-                          height="80vh"
+                          height="90vh"
                           width="90%"
                           alt=""
                         />
@@ -162,11 +161,11 @@ const Trendy = () => {
                 {products2.map((val, i) => {
                   return (
                     <>
-                      <div className="col-md-4 col-sm-6 col-12 p-5">
+                      <div className="col-lg-4 col-sm-6 col-12 p-4">
                         <img
                           src={val}
                           className=""
-                          height="80vh"
+                          height="90vh"
                           width="90%"
                           alt=""
                         />

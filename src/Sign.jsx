@@ -38,7 +38,7 @@ class Sign extends React.Component {
             userno: "",
             userpass: "",
           });
-          window.location.href='/signin';
+          window.location.href = "/signin";
         }
        
       }
@@ -50,11 +50,11 @@ class Sign extends React.Component {
     };
 
     return (
-      <>
+      <div style={{ backgroundColor: "#F7F2F1" }}>
         <div className="row m-0 p-5">
           <div
-            className="col-md-6 col-8 m-0 px-5 py-3 m-auto "
-            style={{ boxShadow: "0 0 4px 2px rgb(234, 235, 236)" }}
+            className="col-lg-6 col-md-10 col-12 m-0 px-5 py-3 m-auto "
+            style={{ boxShadow: "0 0 4px 2px rgb(234, 235, 236)",backgroundColor:"white" }}
           >
             <h5 className="text-center" style={{ fontVariant: "small-caps" }}>
               Create Account
@@ -116,7 +116,7 @@ class Sign extends React.Component {
             </h6>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

@@ -25,7 +25,7 @@ const App = () => {
               <Route path="/sun" element={<SunGlasses/>}/>
 
               <Route path="/contact" element={<Contact/>}/>
-              <Route path="/account" element={<Sign/>}/>
+              <Route path="/sign" element={<Sign/>}/>
               <Route path="/signin" element={<SignIn/>}/>
               <Route path="/cart" element={<Cart/>}/>
               

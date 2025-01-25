@@ -41,11 +41,11 @@ class SignIn extends React.Component {
     };
 
     return (
-      <>
+      <div style={{ backgroundColor: "#F7F2F1" }}>
         <div className="row m-0 p-5">
           <div
-            className="col-md-6 col-8 m-0 px-5 py-3 m-auto "
-            style={{ boxShadow: "0 0 4px 2px rgb(234, 235, 236)" }}
+            className="col-lg-6 col-md-8 col-12 m-0 px-5 py-3 m-auto "
+            style={{ boxShadow: "0 0 4px 2px rgb(234, 235, 236)",backgroundColor:"white" }}
           >
             <h5 className="text-center" style={{ fontVariant: "small-caps" }}>
               Log In
@@ -88,13 +88,13 @@ class SignIn extends React.Component {
               style={{ fontSize: "small" }}
             >
               New Here ?{" "}
-              <NavLink to="/account" className="text-dark">
+              <NavLink to="/sign" className="text-dark">
                 Create Account
               </NavLink>
             </h6>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

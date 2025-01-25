@@ -39,7 +39,7 @@ const ScreenGlasses = () => {
             Frame Type
           </h5>
           <div className="row">
-            <div className="col-md-2 col-4 my-4 d-flex justify-content-between m-auto">
+            <div className="col-lg-2 col-md-3 col-sm-4 col-6 my-4 d-flex justify-content-between m-auto">
               <div onClick={() => Change2()} className="p-2" style={d1}>
                 <img src="images/Fullrim.webp" className="img-fluid" alt="" />
                 <br />

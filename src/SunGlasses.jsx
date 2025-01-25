@@ -54,7 +54,7 @@ const SunGlasses = () => {
             Frame Type
           </h5>
           <div className="row">
-            <div className="col-md-3 col-6 my-4 d-flex justify-content-between m-auto">
+            <div className="col-lg-3 col-md-6 col-8 my-4 d-flex justify-content-between m-auto">
               <div
                 onClick={() => Change1()}
                 className="p-2" style={d1}
